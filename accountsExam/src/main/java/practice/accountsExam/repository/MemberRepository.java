@@ -1,7 +1,6 @@
 package practice.accountsExam.repository;
 
 
-import org.springframework.stereotype.Repository;
 import practice.accountsExam.domain.Member;
 
 import java.util.List;
