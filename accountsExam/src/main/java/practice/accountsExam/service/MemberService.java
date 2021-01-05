@@ -12,7 +12,7 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-//    @Autowired
+    //    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
@@ -24,7 +24,6 @@ public class MemberService {
     public Long join(Member member) {
         //중복 이름 체크
         validateDuplicateMember(member);
-
         memberRepository.save(member);
         return member.getId();
     }

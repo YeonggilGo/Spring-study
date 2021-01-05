@@ -2,6 +2,7 @@ package practice.accountsExam;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import practice.accountsExam.aop.TimeTraceAop;
 import practice.accountsExam.repository.MemberRepository;
 import practice.accountsExam.service.MemberService;
 
@@ -32,6 +33,10 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 //    @Bean
 //    public MemberRepository memberRepository() {
 ////        return new MemoryMemberRepository();
